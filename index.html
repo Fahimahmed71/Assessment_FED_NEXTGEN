@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a148536631.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- chart js -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <!-- javascript -->
+    <script src="./app.js" defer></script>
+
+    <title>Assessment_FED_NEXTGEN</title>
+  </head>
+  <body>
+    <!-- menu -->
+    <dl class="menu">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        "
+      >
+        <img src="" alt="logo" />
+        <i class="fa-solid fa-xmark fa-xl"></i>
+      </div>
+
+      <dt>
+        <a href="#" class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Dashboard</h4>
+        </a>
+        <a href="Assessment_FED_NEXTGEN/attendance.html" class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Attendance</h4>
+        </a>
+        <div class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Employees</h4>
+        </div>
+        <div class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Leaves</h4>
+        </div>
+        <div class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Expense</h4>
+        </div>
+        <div class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Notice</h4>
+        </div>
+        <div class="menuInfo">
+          <img class="menuIco" src="./img/menu-ico.png" alt="ico" />
+          <h4>Departments</h4>
+        </div>
+
+        <div class="expand-menu">
+          <div class="menu-item">
+            <div class="container">
+              <img src="./img/arrow.png" alt="" />
+              <img src="./img//GearSix.png" alt="" />
+              <h4>Settings</h4>
+            </div>
+
+            <div class="sub-menu">
+              <li>
+                <a href="#">Approval</a>
+              </li>
+              <li>
+                <a href="#">Leave</a>
+              </li>
+              <li>
+                <a href="#">Office Setting</a>
+              </li>
+              <li>
+                <a href="#">My Subscriptions</a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="logOut">
+          <img src="./img/logout.png" alt="" />
+          <h4>Logout</h4>
+        </div>
+      </dt>
+    </dl>
+
+    <!-- dashboard -->
+    <dl class="dashboard">
+      <dt class="nav-container">
+        <i class="fa-solid fa-bars fa-xl menu-bar" style="margin-top: 20px"></i>
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search" class="search-bar" />
+        </div>
+
+        <div class="profile-container">
+          <i class="fa-solid fa-calendar-days fa-xl"></i>
+          <i class="fa-regular fa-bell fa-xl"></i>
+          <img
+            src="./img/Unsplash-Avatars_0002s_0001_ivan-stern-xlP76AXGQ4A-unsplash.png"
+            alt="profile"
+          />
+        </div>
+      </dt>
+
+      <dt class="dashboard-container">
+        <h1 style="color: #1e2772; margin-top: 1em">Dashboard</h1>
+        <h4 style="margin-top: 2em">Company Status</h4>
+      </dt>
+
+      <!-- card -->
+      <dt class="card">
+        <section class="card-container">
+          <div class="card-head">
+            <img src="./img/proplegroup-ico.png" alt="" />
+            <h5>Total Employee</h5>
+          </div>
+          <div class="card-info">
+            <h1>450</h1>
+            <button>View All</button>
+          </div>
+          <hr class="divider" />
+
+          <div class="avatar">
+            <img src="./img/card-img1.png" alt="" />
+            <img src="./img/card-img2.png" alt="" />
+            <img src="./img/card-img3.png" alt="" />
+            <img src="./img/card-img4.png" alt="" />
+            <img src="./img/card-img5.png" alt="" />
+            <img src="./img/card-img6.png" alt="" />
+          </div>
+        </section>
+
+        <section class="card-container">
+          <div class="card-head">
+            <img src="./img/proplegroup-ico.png" alt="" />
+            <h5>Attend Today</h5>
+          </div>
+          <div class="card-info">
+            <h1>420</h1>
+            <button>View All</button>
+          </div>
+          <hr class="divider" />
+
+          <div class="avatar">
+            <img src="./img/card-img1.png" alt="" />
+            <img src="./img/card-img2.png" alt="" />
+            <img src="./img/card-img3.png" alt="" />
+            <img src="./img/card-img4.png" alt="" />
+            <img src="./img/card-img5.png" alt="" />
+            <img src="./img/card-img6.png" alt="" />
+          </div>
+        </section>
+        <section class="card-container">
+          <div class="card-head">
+            <img src="./img/proplegroup-ico.png" alt="" />
+            <h5>Employees on Leave</h5>
+          </div>
+          <div class="card-info">
+            <h1>15</h1>
+            <button>View All</button>
+          </div>
+          <hr class="divider" />
+
+          <div class="avatar">
+            <img src="./img/card-img1.png" alt="" />
+            <img src="./img/card-img2.png" alt="" />
+            <img src="./img/card-img3.png" alt="" />
+            <img src="./img/card-img4.png" alt="" />
+            <img src="./img/card-img5.png" alt="" />
+            <img src="./img/card-img6.png" alt="" />
+          </div>
+        </section>
+        <section class="card-container">
+          <div class="card-head">
+            <img src="./img/proplegroup-ico.png" alt="" />
+            <h5>New Expense Request</h5>
+          </div>
+          <div class="card-info">
+            <h1>5</h1>
+            <button>View All</button>
+          </div>
+          <hr class="divider" />
+
+          <div class="avatar">
+            <img src="./img/card-img1.png" alt="" />
+            <img src="./img/card-img2.png" alt="" />
+            <img src="./img/card-img3.png" alt="" />
+            <img src="./img/card-img4.png" alt="" />
+            <img src="./img/card-img5.png" alt="" />
+            <img src="./img/card-img6.png" alt="" />
+          </div>
+        </section>
+      </dt>
+
+      <!-- graph -->
+      <dt class="graph">
+        <!-- report -->
+        <section class="report">
+          <h4 style="font-weight: 700">Expense Report</h4>
+          <div class="report-details">
+            <div class="time">
+              <h5><span>Day</span></h5>
+              <h5>Week</h5>
+              <h5>Month</h5>
+              <h5>Year</h5>
+            </div>
+            <button>Export Details</button>
+          </div>
+          <h1 style="margin-top: 23px; font-size: 36px">৳45,000</h1>
+
+          <div class="ct-chart"></div>
+        </section>
+
+        <!-- summary -->
+        <section class="summery">
+          <h4 style="font-weight: 700">Task Summary</h4>
+          <div class="summery-details">
+            <h4 style="font-weight: 400">Total task</h4>
+            <h3 style="font-weight: 600">112</h3>
+            <h4 style="font-weight: 400; margin-top: 10px">Completed</h4>
+            <div class="bar-compleated">
+              <div class="bar-progress">
+                <h4>50 / 80</h4>
+              </div>
+            </div>
+
+            <h4 style="font-weight: 400; margin-top: 10px">In Progress</h4>
+            <div class="bar-inProgress">
+              <div class="bar-progress">
+                <h4>15 / 112</h4>
+              </div>
+            </div>
+
+            <h4 style="font-weight: 400; margin-top: 10px">Pending</h4>
+            <div class="bar-pending">
+              <div class="bar-progress">
+                <h4>15 / 112</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </dt>
+    </dl>
+  </body>
+</html>
